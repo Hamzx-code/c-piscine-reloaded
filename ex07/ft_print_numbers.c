@@ -6,11 +6,11 @@
 /*   By: hhamidi <hhamidi@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 14:46:42 by hhamidi           #+#    #+#             */
-/*   Updated: 2025/11/03 14:56:25 by hhamidi          ###   ########lyon.fr   */
+/*   Updated: 2025/11/06 13:47:25 by hhamidi          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_print_numbers(void)
 {
@@ -19,7 +19,7 @@ void	ft_print_numbers(void)
 	nb = '0';
 	while (nb <= '9')
 	{
-		write(1, &nb, 1);
+		ft_putchar(nb);
 		nb++;
 	}
 }

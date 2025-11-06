@@ -6,20 +6,20 @@
 /*   By: hhamidi <hhamidi@student.42lyon.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 14:58:26 by hhamidi           #+#    #+#             */
-/*   Updated: 2025/11/03 15:04:53 by hhamidi          ###   ########lyon.fr   */
+/*   Updated: 2025/11/06 14:03:51 by hhamidi          ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {
-	if (n % 2 == 0)
+	if (n >= 0)
 	{
-		write(1, "P", 1);
+		ft_putchar('P');
 	}
 	else
 	{
-		write(1, "N", 1);
+		ft_putchar('N');
 	}
 }
